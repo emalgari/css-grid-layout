@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***************************Container****************************/
+.container{
+    padding: 1em;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+/******************Box-1*********************/
+.container .box-1{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+.container .box-1 .item1{
+    background-color:#007F5F;
+}
+.container .box-1 .item2{
+    background-color:#2B9348 ;
+}
+/******************Box-1 End*********************/
+
+/******************iterm-3*********************/
+.container .item3{
+    background-color: #80B918;
+}
+/******************iterm-3 End*******************/
+
+/******************Box-2*********************/
+.container .box-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1em;
+}
+.container .box-2 .item4{
+    background-color:#DDDF00;
+}
+.container .box-2 .item5{
+    background-color:#EEEF20;
+}
+.container .box-2 .item6{
+    background-color:#FFFF3F;
+}
+/******************Box-2 End*********************/
+
+
+/******************iterm-7*********************/
+.item7{
+    background-color: #55A630;
+    grid-row:2/3;
+}
+/******************iterm-7 End***************/
+
+
+/******************Box-3*********************/
+.container .box-3{
+    grid-column: 2 /span 2;
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr;
+    grid-gap:1em;
+}
+
+/*********Sub Box-1***********/
+.container .box-3 .sub-box1{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1em;
+}
+.container .box-3 .sub-box1 .item8{
+    background-color:#AACC00;
+}
+.container .box-3 .sub-box1 .item9{
+    background-color:#BFD200;
+}
+/*********Sub Box-1 End***********/
+
+
+/*********Sub Box-2***********/
+.container .box-3 .sub-box2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:1em;
+}
+
+.container .box-3 .sub-box2 .item11{
+    background-color: #007F5F;
+}
+.container .box-3 .sub-box2 .item10{
+    background-color: #D4D700;
+}
+/*********Sub Box-2 End***********/
+
+/******************Box-3 End*********************/
+
+/**********************************Container End*****************************/
+
+/******************Footer*********************/
+footer{
+    background-color:#9BC1BC;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    height: 3em;
+}
+/******************Footer End*********************/
